@@ -1,0 +1,184 @@
+:root {
+  --primary-color: #ffc947;
+  --secondary-color: #9ef659;
+  --normal-color: #e5e5e5;
+  --box-bg: #141923;
+
+  --font: "Turret Road", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(
+    89.68deg,
+    #0f0c29 -0.56%,
+    #302b63 51.62%,
+    #24243e 100.65%
+  );
+  display: flex;
+  padding: 0 2rem 2rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3rem;
+  font-family: var(--font);
+}
+
+.title {
+  font-size: 3.6rem;
+  color: var(--primary-color);
+  font-weight: 800;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.title + p {
+  color: var(--secondary-color);
+  font-weight: 500;
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+.choices-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.choice {
+  background-color: var(--box-bg);
+  border: 6px solid var(--primary-color);
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.choice img {
+  max-width: 100%;
+  height: auto;
+  width: 10rem;
+}
+
+.choice p {
+  color: var(--normal-color);
+  font-size: 2.3rem;
+  font-family: var(--font);
+  text-align: center;
+  font-weight: 700;
+}
+
+.score-container {
+  background-color: var(--box-bg);
+  padding: 3rem 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8rem;
+  border: 6px solid var(--primary-color);
+}
+
+.score-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.score-title {
+  color: var(--normal-color);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.score {
+  color: var(--primary-color);
+  font-size: 8rem;
+  text-align: center;
+  font-weight: 800;
+}
+
+.game-message {
+  color: var(--secondary-color);
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.popup-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+}
+
+.popup-div {
+  background-color: var(--box-bg);
+  border: 6px solid var(--primary-color);
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.game-status {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.play-again {
+  font-size: 2.5rem;
+  background-color: var(--primary-color);
+  color: #000000;
+  border: 6px solid var(--normal-color);
+  padding: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+footer p {
+  font-size: 1.6rem;
+  color: var(--normal-color);
+  font-weight: 500;
+  text-align: center;
+}
+
+footer p a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: 700;
+}
